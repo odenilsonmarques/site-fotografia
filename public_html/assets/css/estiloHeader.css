@@ -1,0 +1,38 @@
+a{
+    font-size: 18px;
+}
+p{
+    font-family: cursive;
+    font-size: 20px;
+    margin-top: 10px;
+    color:#c7ddef
+}
+.navbar-inverse{
+    background-color: #000;  
+}
+.navbar-inverse .navbar-brand {
+    color: #f7f7f7;
+    font-size: 30px;   
+}
+.navbar-inverse .navbar-nav > li > a {
+    color:#c7ddef;   
+}
+.navbar-inverse .navbar-nav > .active > a {
+    color: #f7f7f7;      
+}
+.navbar-inverse .navbar-nav >.active > a {
+    color: #f7f7f7;      
+}
+.navbar-inverse .dropdown-menu{
+    background-color: #000;
+    color: #fff;  
+}
+.navbar-inverse .dropdown-menu > li > a{ 
+    color: #fff;
+    margin-left: 40px
+}
+.navbar-inverse .dropdown-menu > li > a:hover{
+    color: #1b6d85;
+}
+
+

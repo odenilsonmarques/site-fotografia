@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>contato</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1"/><!--a propriedade width=device-width diz que a largura da pagina é igual a do dispositivo. Já a proprieada initial-scale=1 é resposavel pelo zoo que nesse caso começa em 1-->
+         <link rel="shortcut icon" href="assets/img/images.png" type="image/x-icon"/> 
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="assets/css/estiloBody.css"/>
+        <link rel="stylesheet" href="assets/css/estiloHeader.css"/>
+        <link rel="stylesheet" href="assets/css/estiloFooter.css"/>
+        <link rel="stylesheet" href="assets/css/estiloContato.css"/>
+        <script type="text/javascript" src="assets/js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+        <script type="text/javascript" src="assets/js/validaForm.js"></script>
+        <script type="text/javascript" src="assets/js/mensagem.js"></script>
+        <!--Sempre manter a ordem acima para que o prejeto carregue da melhor maneira-->
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <header>
+                        <nav class="navbar navbar-inverse">
+                            <div class="container-fluid">
+                                <div class="navbar-header"><br>
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>                        
+                                    </button>
+                                    <a class="navbar-brand" href="index.html" >Osvaldo Canuto<br><p>Fotografia</p></a>
+                                </div><br>
+                                <div class="collapse navbar-collapse " id="myNavbar">
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li class="active"><a href="index.html">Pagina Inicial</a></li>
+                                        <li class="dropdown">
+                                            <a href="" class="dropdown-toggle" data-toggle="dropdown">Portifólio<span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="aniversario.html">Aniversário</a></li>  
+                                                <li><a href="casamento.html">Casamento</a></li>
+                                                <li><a href="formatura.html">Formatura</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="contato.html">Contato</a></li>
+                                        <li><a href="sobre.html">Sobre</a></li>
+                                    </ul>
+                                </div>
+                            </div><br>
+                        </nav>
+                    </header>
+                    <section>
+                       Rua - Manoel José Maia, 39<br>
+                       São José de Robamar - MA 65110-000<br>
+                       osvadocanuto@hotmail.com<br>
+                       Tel:(98)99992 - 6891<br>
+                    </section>
+                    <article>
+                        <form name="frmContato" id="frmContato">
+                            <legend>Formulario Para Contato</legend>
+                            <label>Nome *</label>
+                            <input type="text" name="nome" id="nome" class="form-control"><br>
+                            <label >E-mail *</label>
+                            <input type="text" name="email" id="email" class="form-control"><br>
+                            <label >Mensagem *</label>
+                            <textarea name="mensagem" id="mensagem" rows="5" class="form-control"></textarea><br>
+                            <button type="submit" value="ENVIAR" onclick=" return msgRetorno();" class="btn btn-default">ENVIAR</button>
+                        </form><br> 
+                        <legend>Localização</legend>
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe  class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.8451207043745!2d-44.059186185702146!3d-2.557215398136694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f6bd1945c0210b%3A0xb08fbb36f8877848!2sTele+Pizza+Comfort!5e0!3m2!1spt-BR!2sbr!4v1530380568756" height="80%"></iframe>
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="row">
+                <footer>
+                    <div class="col-sm-4" id="borda">
+                        <h3>OUTROS SERVIÇOS</h3>
+                        <ul>
+                            <li>Fotos 3 x 4 | Fotos 10 x 15 | Fotos 15 x 20</li>
+                            <li>Criação de Banner | Montagem de Fotos</li>               
+                            <li>Restauração de Fotos</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-4" id="borda">
+                        <h3>LOCALIZAÇÃO</h3>
+                        <p>O Ceará o Fotos, Encontra-se Localizado na Rua Manoel José Maia, nº 39, São José de Ribamar / Cep 65110-000.</p><br>
+                    </div>
+                    <div class="col-sm-4 links">
+                        <h3>ENCONTRE-NOS</h3>
+                        <ul>
+                            <li >
+                                <a href="https://www.facebook.com/"   target="_blank" ><img src="assets/img/facebook-logo.png"> Facebook</a>
+                            </li><br>  
+                            <li>  
+                                <a href="https://www.instagram.com/?hl=pt-br" target="_blank"><img  src="assets/img/icon.png">  Instagran</a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="col-sm-12">
+                        <div class="informacao">
+                            &copy 2019 Osvaldo Canuto || by <a href="#">ODSystem.com</a>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
+
